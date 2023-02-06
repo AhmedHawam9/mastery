@@ -1,8 +1,12 @@
+//=========== Active navbar Link in multi pages =============
 const currentLocation = location.href;
-const menuItem = document.querySelectorAll(".navbar-collapse a");
+const menuItem = document.querySelectorAll(
+  ".navbar .nav-item .nav-link"
+);
 const menuLength = menuItem.length;
 for (let i = 0; i < menuLength; i++) {
   if (menuItem[i].href === currentLocation) {
-    menuItem[i].className = "active";
+    menuItem[i].className = "nav-link active";
   }
 }
+//=========== Active navbar Link in multi pages =============

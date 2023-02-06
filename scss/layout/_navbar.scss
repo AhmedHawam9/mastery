@@ -1,5 +1,5 @@
 .nav-top {
-  background-color: $SecondColor;
+  background-color: #fff;
   padding: 1.2rem 1.2rem .8rem;
   .container-fluid {
     display: flex;
@@ -9,14 +9,14 @@
   .contact_info {
     .phone,
     .email {
-      color: #d3d3d3;
+      color: $SecondColor;
       display: inline-block;
       svg {
         font-size: 1rem;
       }
       a {
         font-family: "regular";
-        color: #d3d3d3;
+        color: $SecondColor;
         border-inline-end: 0.5px solid #d3d3d3;
         padding-inline-end: 0.5rem;
         padding-inline-start: 0.5rem;
@@ -125,21 +125,21 @@
   }
 }
 .navbar {
-  background-color: rgba(0, 0, 0, .02);
-  position: absolute;
-  top: 70px;
+  background-color: #fff;
+  // position: absolute;
+  // top: 70px;
   z-index: 9999;
   right: 0;
   left: 0;
   padding: .8rem 1.2rem 1.2rem;
-  .navbar-toggler {
-    border: 1px solid #fff;
-    .navbar-toggler-icon {
-      filter: brightness(0) invert(1);
-      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
-      opacity: 1;
-    }
-  }
+  // .navbar-toggler {
+  //   border: 1px solid #fff;
+  //   .navbar-toggler-icon {
+  //     filter: brightness(0) invert(1);
+  //     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+  //     opacity: 1;
+  //   }
+  // }
   .navbar-brand {
     img {
       width: 200px;
@@ -153,11 +153,14 @@
     .nav-item {
       margin-inline-end: 1.5rem;
       .nav-link {
-        color: #fff;
+        color: $SecondColor;
         font-family: "regular";
         font-size: 1.1rem;
         &:hover {
-          color: rgb(215, 215, 215);
+          color: rgb(107, 107, 107);
+        }
+        &.active {
+          font-family: "semibold";
         }
       }
     }
@@ -172,6 +175,9 @@
 
 @media only screen and (max-width: 991.98px) {
   .navbar {
+    position: relative;
+    top: 0;
+    background-color: #fff;
     .container-fluid {
       flex-direction: row-reverse;
     }
@@ -179,11 +185,15 @@
       .nav-item {
         margin-inline-end: 0;
         margin-bottom: 1rem;
+        .nav-link {
+          color: $SecondColor;
+        }
       }
     }
     .navbar-brand {
       img {
         width: 150px;
+        content: url("../../media/image/logo_dark.png");
       }
     }
   }

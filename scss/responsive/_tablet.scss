@@ -1,9 +1,4 @@
 @media only screen and (max-width: 991.98px) {
-  .navbar {
-    position: relative;
-    top: 0;
-    background-color: $SecondColor;
-  }
   .image {
     margin-top: 4rem;
   }
@@ -26,6 +21,53 @@
         &:nth-child(6),
         &:nth-child(9) {
           margin-inline-end: 0;
+        }
+      }
+    }
+  }
+  .services_details {
+    .image {
+      img {
+        width: 70%;
+      }
+      &::after {
+        width: 70%;
+        top: -7%;
+        left: 10%;
+      }
+    }
+  }
+  .library {
+    .text {
+      width: 80%;
+    }
+    .card_library {
+      &.video_card {
+        height: 315px;
+      }
+    }
+  }
+  .article {
+    .title {
+      width: 60%;
+    }
+    .text {
+      width: 85%;
+    }
+  }
+  .video_details {
+    .title {
+      width: 50%;
+    }
+    .image_article {
+      height: 400px;
+    }
+  }
+  .legislation {
+    .legislation_card {
+      .description {
+        .title {
+          width: 100%;
         }
       }
     }
