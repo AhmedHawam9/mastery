@@ -40,10 +40,29 @@
       .nav-top .contact_info .phone a, .nav-top .contact_info .email a {
         color: #fff;
       }
+      .navbar .navbar-brand .img_mobile {
+          display: none;
+        }
+        .navbar .navbar-brand .img_laptop {
+          display: block;
+        }
       @media only screen and (max-width: 991.98px) {
+        .nav-top {
+          position: unset;
+        }
         .navbar {
           position: relative;
           top: 0;
+          background-color: #fff;
+        }
+        .nav-top .contact_info .phone a, .nav-top .contact_info .email a, .nav-top .contact_info .phone svg, .nav-top .contact_info .email svg, .navbar .navbar-nav .nav-item .nav-link {
+          color: #120103;
+        }
+        .navbar .navbar-brand .img_mobile {
+          display: block;
+        }
+        .navbar .navbar-brand .img_laptop {
+          display: none;
         }
       }
     </style>
@@ -146,9 +165,10 @@
             </a>
           </ul>
         </div>
-        <a class="navbar-brand" href="index.html"
-          ><img src="media/image/logo_light.png" alt="logo"
-        /></a>
+        <a class="navbar-brand" href="index.html">
+          <img src="media/image/logo_light.png" class="img_laptop" alt="logo" />
+          <img src="media/image/logo_dark.png" class="img_mobile" alt="logo" />
+        </a>
       </div>
     </nav>
     <!-- End Navbar -->
