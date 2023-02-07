@@ -22,4 +22,14 @@
             }
         }
     }
+    .about {
+        .image {
+            img {
+                height: 350px;
+            }
+            &::after {
+                height: 350px;
+            }
+        }
+    }
 }
