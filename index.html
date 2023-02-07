@@ -15,28 +15,29 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <style>
       .navbar {
-        background-color: rgba(0, 0, 0, 0.02);
+        background-color: rgba(0,0,0,.02);
         position: absolute;
-        top: 70px;
+        top: 65px;
       }
       .navbar .navbar-nav .nav-item .nav-link {
         color: #fff;
       }
       .nav-top {
-        background-color: #120103;
-        padding: 1.2rem 1.2rem 0.8rem;
+        background-color: rgba(0,0,0,.02);
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100%;
+        z-index: 9999;
       }
-      .contact_info .phone,
-      .contact_info .email {
+      .contact_info .phone, .contact_info .email {
         color: #fff;
         display: inline-block;
       }
-      .nav-top .contact_info .phone svg,
-      .nav-top .contact_info .email svg {
+      .nav-top .contact_info .phone svg, .nav-top .contact_info .email svg {
         color: #fff;
       }
-      .nav-top .contact_info .phone a,
-      .nav-top .contact_info .email a {
+      .nav-top .contact_info .phone a, .nav-top .contact_info .email a {
         color: #fff;
       }
       @media only screen and (max-width: 991.98px) {
@@ -172,12 +173,22 @@
           <div class="col-lg-6 col-12">
             <h1 class="title">من نحن</h1>
             <p class="text">
-              إيماننا الراسخ هو أن المحامين المتميزين ليسوا فقط أولئك الذين
-              يتمتعون بالخبرة والمهارات القانونية الضرورية فحسب، بل أيضا أولئك
-              الذين يتحلون بالصفات الأخلاقية الحميدة التي تعتبر عاملاً أساسياً
-              في نجاح أي محامِ ويثمنها عملاؤنا لذلك ، نستعين بأرقى المعايير
-              المهنية والأخلاقية عند اختيار موظفينا لضمان حصول عملائنا على خدمات
-              قانونية متميزة ذات نوعية عالية دون المساومة على قيمنا الأخلاقية
+              ماستري للمحاماة هي شركة مهنية مرخصة في نشاط الاستشارات القانونية و
+              التوثيق ، و خبير معتمد في المحاكم السعودية من قبل وزارة العدل ، وعضو
+              أساسي لدى الهيئة السعودية للمحامين ، تأسست ماستري للمحاماة من قبل فريق
+              من المحامين والمستشارين في المجال القانوني والشرعي بخبرات متخصصة منذ
+              خمسة عشر سنة.
+            </p>
+            <p class="text">
+              نمتلك في ماستري للمحاماة خبرات متنوعة في الأنظمة السعودية والإقليمية
+              التي تمكننا من فهم احتياجات عملائنا لتقديم خدمات متميزة لهم من خلال
+              فريق من المحامين والمستشارين المتخصصين الحاصلين على المؤهلات والخبرات
+              العالية التي تواكب الأنظمة و التشريعات الحديثة وفق والرؤية الاقتصادية
+              والاجتماعية في المملكة العربية السعودية في مختلف القطاعات. نقدم في
+              ماستري للمحاماة لعملائنا مجموعة من الخدمات والحلول القانونية والشرعية
+              في مجال متنوعة منها : الشركات والخدمات التجارية ،الاستثمار الأجنبي ،
+              صياغة العقود ، الافلاس ، التركات ، الأوقاف ، التقاضي ، حقوق الملكية
+              الفكرية والتوثيق .
             </p>
           </div>
           <div class="col-lg-6 col-12">
@@ -212,84 +223,51 @@
           <!-- For loop service card -->
 
           <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
+          <a href="commercial_services.html" class="card_service">
             <img
               class="image_service"
-              src="./media/image/icon/certificate.png"
+              src="./media/image/icon/commercial_services.png"
               alt="service image"
             />
-            <h4 class="text_service">الامتياز التجاري</h4>
+            <h4 class="text_service">الشركات والخدمات التجارية</h4>
           </a>
           <!-- For loop service card -->
 
           <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
+          <a href="induction.html" class="card_service">
             <img
               class="image_service"
-              src="./media/image/icon/write.png"
+              src="./media/image/icon/induction.png"
               alt="service image"
             />
-            <h4 class="text_service">صياغة العقود</h4>
+            <h4 class="text_service">التركات</h4>
           </a>
           <!-- For loop service card -->
 
           <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
+          <a href="endowment.html" class="card_service">
             <img
               class="image_service"
-              src="./media/image/icon/law.png"
+              src="./media/image/icon/endowment.png"
               alt="service image"
             />
-            <h4 class="text_service">التقاضي</h4>
+            <h4 class="text_service">الأوقاف</h4>
           </a>
           <!-- For loop service card -->
 
           <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
+          <a href="foreign_investment.html" class="card_service">
             <img
               class="image_service"
               src="./media/image/icon/coins.png"
               alt="service image"
             />
-            <h4 class="text_service">تحصيل الديون</h4>
+            <h4 class="text_service">الاستثمار الأجنبي</h4>
           </a>
           <!-- For loop service card -->
 
           <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
-            <img
-              class="image_service"
-              src="./media/image/icon/write.png"
-              alt="service image"
-            />
-            <h4 class="text_service">صياغة العقود</h4>
-          </a>
-          <!-- For loop service card -->
-
-          <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
-            <img
-              class="image_service"
-              src="./media/image/icon/certificate.png"
-              alt="service image"
-            />
-            <h4 class="text_service">الامتياز التجاري</h4>
-          </a>
-          <!-- For loop service card -->
-
-          <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
-            <img
-              class="image_service"
-              src="./media/image/icon/write.png"
-              alt="service image"
-            />
-            <h4 class="text_service">صياغة العقود</h4>
-          </a>
-          <!-- For loop service card -->
-
-          <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
+          <a href="fading.html" class="card_service">
             <img
               class="image_service"
               src="./media/image/icon/law.png"
@@ -300,13 +278,35 @@
           <!-- For loop service card -->
 
           <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
+          <a href="intellectual.html" class="card_service">
             <img
               class="image_service"
-              src="./media/image/icon/services.png"
+              src="./media/image/icon/certificate.png"
               alt="service image"
             />
-            <h4 class="text_service">الادارة القانونية</h4>
+            <h4 class="text_service">الملكية الفكرية</h4>
+          </a>
+          <!-- For loop service card -->
+
+          <!-- For loop service card -->
+          <a href="bankruptcy.html" class="card_service">
+            <img
+              class="image_service"
+              src="./media/image/icon/bankruptcy.png"
+              alt="service image"
+            />
+            <h4 class="text_service">الإفلاس</h4>
+          </a>
+          <!-- For loop service card -->
+
+          <!-- For loop service card -->
+          <a href="documentation.html" class="card_service">
+            <img
+              class="image_service"
+              src="./media/image/icon/documentation.png"
+              alt="service image"
+            />
+            <h4 class="text_service">التوثيق</h4>
           </a>
           <!-- For loop service card -->
         </div>
@@ -458,6 +458,11 @@
                 </li>
                 <li>
                   <a class="link_footer" href="consult.html">طلب استشارة</a>
+                </li>
+                <li>
+                  <a class="link_footer" href="system.html"
+                    >النظام الالكترونى</a
+                  >
                 </li>
               </ul>
             </div>

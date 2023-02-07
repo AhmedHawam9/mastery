@@ -220,7 +220,7 @@ a {
       flex-direction: column;
       border: 1px solid $PrimaryColor;
       border-radius: 8px;
-      padding: 3rem;
+      padding: 1.5rem;
       margin-bottom: 1.5rem;
       margin-inline-end: 1.8%;
       width: 18.5%;
@@ -278,6 +278,7 @@ a {
       font-family: "semibold";
       color: $SecondColor;
       margin-bottom: 1rem;
+      width: 60%;
     }
     .text_terms {
       font-family: "regular";
@@ -355,6 +356,7 @@ a {
     text-align: center;
     position: relative;
     margin-bottom: 2rem;
+    height: 100%;
     img {
       display: block;
       margin: 0 auto;
@@ -370,8 +372,8 @@ a {
     .text {
       font-family: "regular";
       color: #757575;
-      width: 70%;
-      margin: 0 auto;
+      width: 90%;
+      margin: 0 auto .5rem;
       text-align: center;
     }
     &::after {
