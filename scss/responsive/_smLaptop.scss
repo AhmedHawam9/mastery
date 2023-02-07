@@ -12,4 +12,14 @@
             }
         }
     }
+    .consult {
+        .image {
+            img {
+                height: 250px;
+            }
+            &::after {
+                height: 250px;
+            }
+        }
+    }
 }

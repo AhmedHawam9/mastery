@@ -72,6 +72,28 @@
       }
     }
   }
+  .consult {
+    .image {
+      img {
+        width: 70%;
+        height: 350px;
+      }
+      &::after {
+        width: 70%;
+        left: 11%;
+        height: 350px;
+      }
+      &::before {
+        content: unset;
+      }
+    }
+}
+.contact {
+  .contact_data {
+    width: 80%;
+    margin: 2rem auto 0;
+  }
+}
   footer {
     .logo {
       margin: 0 auto;

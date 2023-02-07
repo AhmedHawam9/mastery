@@ -69,6 +69,30 @@
       height: 300px;
     }
   }
+  .consult {
+    .image {
+      img {
+        width: 70%;
+        height: 250px;
+      }
+      &::after {
+        width: 70%;
+        height: 250px;
+      }
+      &::before {
+        content: unset;
+      }
+    }
+  }
+  .consult {
+    .input_file {
+      .file {
+        span {
+          width: 50%;
+        }
+      }
+    }
+  }
   footer {
     .twitter-tweet {
       width: 300px !important;

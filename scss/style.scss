@@ -625,5 +625,251 @@ a {
   }
 }
 
+.consult {
+  margin: 5rem 0;
+  h4 {
+    color: $SecondColor;
+    font-family: "bold";
+    margin-bottom: .5rem;
+  }
+  p {
+    width: 50%;
+    font-family: "regular";
+    color: #777777;
+    margin-bottom: 3rem;
+  }
+  .form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    label {
+      margin-bottom: .7rem;
+      font-family: "medium";
+      color: $SecondColor;
+    }
+    input, textarea {
+      background-color: #F7F7F7;
+      padding: .75rem;
+      padding-inline-start: 2rem;
+      font-family: "regular";
+      resize: none;
+      &::placeholder {
+        color: #B8B8B8;
+      }
+    }
+    svg {
+      position: absolute;
+      top: 3.3rem;
+      right: .5rem;
+      color: #B8B8B8;
+    }
+    .bootstrap-select {
+      .dropdown-toggle {
+        padding: .75rem;
+        border: 1px solid #ced4da;
+        &:hover {
+          background-color: #F7F7F7;
+        }
+        .filter-option-inner-inner {
+          font-family: "regular";
+          text-align: start;
+        }
+      }
+      .dropdown-menu {
+        li {
+          a {
+            font-family: "regular";
+            color: $SecondColor;
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+  .input_file {
+    .file {
+      background-color: #F7F7F7;
+      height: 250px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      svg {
+        position: unset;
+        display: block;
+        font-size: 2rem;
+        margin: 0 auto 1.5rem;
+      }
+      span {
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+    input[type="file"]  {
+      display: none;
+    }
+  }
+  .image {
+    position: relative;
+    z-index: 999;
+    img {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      width: 80%;
+      height: 350px;
+      z-index: 999;
+    }
+    &::after {
+      content: "";
+      z-index: 0;
+      display: block;
+      position: absolute;
+      top: -6%;
+      left: 5%;
+      border-radius: 8px;
+      width: 80%;
+      height: 350px;
+      border: 1px solid #0c2a3e;
+    }
+    &::before {
+      content: url("../media/image/shape_consult.png");
+      position: absolute;
+      top: -5rem;
+      left: 0;
+      height: fit-content;
+    }
+  }
+  .submit_btn {
+    font-family: "bold";
+    padding: .8rem 4rem;
+    color: #fff;
+    background-color: #C81524;
+    transition: .7s ease-in-out;
+    &:hover {
+      background-color: transparent;
+      color: #C81524;
+      border: 1px solid #C81524;
+      transition: .7s ease-in-out;
+    }
+  }
+}
+
+.contact {
+  margin: 5rem 0;
+  h4 {
+    color: $SecondColor;
+    font-family: "bold";
+    margin-bottom: .5rem;
+  }
+  p {
+    width: 50%;
+    font-family: "regular";
+    color: #777777;
+    margin-bottom: 3rem;
+  }
+  .form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    label {
+      margin-bottom: .7rem;
+      font-family: "medium";
+      color: $SecondColor;
+    }
+    input, textarea {
+      background-color: #F7F7F7;
+      padding: .75rem;
+      padding-inline-start: 2rem;
+      font-family: "regular";
+      resize: none;
+      &::placeholder {
+        color: #B8B8B8;
+      }
+    }
+    svg {
+      position: absolute;
+      top: 3.3rem;
+      right: .5rem;
+      color: #B8B8B8;
+    }
+    .bootstrap-select {
+      .dropdown-toggle {
+        padding: .75rem;
+        border: 1px solid #ced4da;
+        &:hover {
+          background-color: #F7F7F7;
+        }
+        .filter-option-inner-inner {
+          font-family: "regular";
+          text-align: start;
+        }
+      }
+      .dropdown-menu {
+        li {
+          a {
+            font-family: "regular";
+            color: $SecondColor;
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+  .contact_data {
+    width: 60%;
+    margin-inline-start: auto;
+    .card_contact {
+      border: 2px solid $PrimaryColor;
+      border-radius: 20px;
+      padding: 2rem;
+      display: flex;
+      margin-bottom: 1.5rem;
+      svg {
+        width: 20px;
+        height: 20px;
+        padding: 1rem;
+        margin-inline-end: 1.5rem;
+        border-radius: 50%;
+        color: $PrimaryColor;
+        background-color: rgba(12, 42, 62, .15);
+      }
+      .description {
+        width: 80%;
+        .title {
+          font-family: "bold";
+          color: $SecondColor;
+        }
+        .text {
+          text-align: start;
+          font-family: "medium";
+          color: #757575;
+          width: 100%;
+          display: block;
+          margin-bottom: 0;
+          &.phone {
+            unicode-bidi: plaintext;
+            text-align: end;
+          }
+        }
+      }
+    }
+  }
+  .submit_btn {
+    font-family: "bold";
+    padding: .8rem 4rem;
+    color: #fff;
+    background-color: #C81524;
+    transition: .7s ease-in-out;
+    &:hover {
+      background-color: transparent;
+      color: #C81524;
+      border: 1px solid #C81524;
+      transition: .7s ease-in-out;
+    }
+  }
+}
+
 @import "./_layout.scss";
 @import "./_responsive.scss";

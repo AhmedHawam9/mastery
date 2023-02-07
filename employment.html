@@ -12,6 +12,7 @@
     <!-- ? Main CSS -->
 
     <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <!-- ? Custom CSS -->
 
     <!-- ? Main JavaScript -->
@@ -23,6 +24,7 @@
     <!-- ? Main JavaScript -->
 
     <!-- ? Custom JavaScript -->
+    <script src="js/bootstrap-select.min.js"></script>
     <!-- ? Custom JavaScript -->
 
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -126,134 +128,96 @@
     <!-- Start Breadcrumb -->
     <section class="breadcrumb">
       <div class="container">
-        <h2 class="title">خدماتنا</h2>
+        <h2 class="title">التوظيف</h2>
       </div>
     </section>
     <!-- End Breadcrumb -->
 
-    <!-- Start Services -->
-    <section class="services">
+    <!-- Start consult -->
+    <section class="consult">
       <div class="container">
-        <h1 class="title">خدمات المكتب</h1>
-        <p class="text">
-          يقدم مجموعة ماستري للمحاماة والحلول القانونية مجموعة من الخدمات
-          القانونية ويمكن تيسير أسلوب التعامل من خلال طلبها عبر النوافذ الخاصة
-          بها .
-        </p>
-        <div class="services_section">
-          <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
-            <img
-              class="image_service"
-              src="./media/image/icon/write.png"
-              alt="service image"
-            />
-            <h4 class="text_service">صياغة العقود</h4>
-          </a>
-          <!-- For loop service card -->
+        <div class="row">
+          <div class="col-lg-7 col-12">
+            <h4 class="title">طلب توظيف</h4>
+            <p class="text">املئ البيانات التالية الآن وسنقوم بالتوصل معك حول تفاصيل التوظيف الخاصة بك</p>
+            <form action="">
+              <div class="form-group">
+                <label for="">الاسم كاملا</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="ادخل الاسم كاملا"
+                />
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="form-group">
+                <label for="">رقم الهاتف</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="ادخل رقم الهاتف"
+                />
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="form-group">
+                <label for="">البريد الالكتروني</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="ادخل البريد الالكتروني"
+                />
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="form-group">
+                <label for="">اختر الوظيفة</label>
+                <select
+                  name=""
+                  id=""
+                  class="form-control selectpicker"
+                  title="اختر الوظيفة المطلوبة"
+                >
+                  <option value="">محامي</option>
+                  <option value="">مندوب</option>
+                </select>
+              </div>
+              <div class="form-group input_file">
+                <label>ارفع السيرة الذاتية الخاصة بك</label>
+                <label for="file" class="file">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span id="file_name">اسحب الملف واسقطه هنا او قم بتحميله من المتصفح</span>
+                </label>
+                <input type="file" name="" id="file" class="form-control">
+                <script>
+                    var hiddenBtn = document.getElementById('file');
+                    var chooseBtn = document.getElementById('file_name');
 
-          <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
-            <img
-              class="image_service"
-              src="./media/image/icon/certificate.png"
-              alt="service image"
-            />
-            <h4 class="text_service">الامتياز التجاري</h4>
-          </a>
-          <!-- For loop service card -->
-
-          <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
-            <img
-              class="image_service"
-              src="./media/image/icon/write.png"
-              alt="service image"
-            />
-            <h4 class="text_service">صياغة العقود</h4>
-          </a>
-          <!-- For loop service card -->
-
-          <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
-            <img
-              class="image_service"
-              src="./media/image/icon/law.png"
-              alt="service image"
-            />
-            <h4 class="text_service">التقاضي</h4>
-          </a>
-          <!-- For loop service card -->
-
-          <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
-            <img
-              class="image_service"
-              src="./media/image/icon/coins.png"
-              alt="service image"
-            />
-            <h4 class="text_service">تحصيل الديون</h4>
-          </a>
-          <!-- For loop service card -->
-
-          <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
-            <img
-              class="image_service"
-              src="./media/image/icon/write.png"
-              alt="service image"
-            />
-            <h4 class="text_service">صياغة العقود</h4>
-          </a>
-          <!-- For loop service card -->
-
-          <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
-            <img
-              class="image_service"
-              src="./media/image/icon/certificate.png"
-              alt="service image"
-            />
-            <h4 class="text_service">الامتياز التجاري</h4>
-          </a>
-          <!-- For loop service card -->
-
-          <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
-            <img
-              class="image_service"
-              src="./media/image/icon/write.png"
-              alt="service image"
-            />
-            <h4 class="text_service">صياغة العقود</h4>
-          </a>
-          <!-- For loop service card -->
-
-          <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
-            <img
-              class="image_service"
-              src="./media/image/icon/law.png"
-              alt="service image"
-            />
-            <h4 class="text_service">التقاضي</h4>
-          </a>
-          <!-- For loop service card -->
-
-          <!-- For loop service card -->
-          <a href="contract.html" class="card_service">
-            <img
-              class="image_service"
-              src="./media/image/icon/services.png"
-              alt="service image"
-            />
-            <h4 class="text_service">الادارة القانونية</h4>
-          </a>
-          <!-- For loop service card -->
+                    hiddenBtn.addEventListener('change', function() {
+                        if (hiddenBtn.files.length > 0) {
+                            chooseBtn.innerText = hiddenBtn.files[0].name;
+                        } else {
+                            chooseBtn.innerText = 'Choose';
+                        }
+                    });
+                </script>
+              </div>
+              <button type="submit" class="btn submit_btn">ارسال الطلب</button>
+            </form>
+          </div>
+          <div class="col-lg-5 col-12">
+            <div class="image">
+              <img src="./media/image/employment.png" alt="employment" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- End Services -->
+    <!-- End consult -->
 
     <!-- Start Footer -->
     <footer>
