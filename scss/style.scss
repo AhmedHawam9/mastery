@@ -873,5 +873,19 @@ a {
   }
 }
 
+.not_found {
+  margin: 3rem 0;
+  h2 {
+    font-family: "semibold";
+    text-align: center;
+    font-size: 3rem
+  }
+  lottie-player {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+  }
+}
+
 @import "./_layout.scss";
 @import "./_responsive.scss";
