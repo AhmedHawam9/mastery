@@ -2,7 +2,7 @@ footer {
     background-color: $PrimaryColor;
     background-image: url("../../media/image/footer_shape.png");
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     padding: 1.5rem;
     .container-fluid {
         padding-bottom: 1.5rem;

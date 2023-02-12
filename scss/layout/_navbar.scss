@@ -1,6 +1,7 @@
 .nav-top {
   background-color: #fff;
-  padding: 1.2rem 1.2rem 0;
+  padding: 1.2rem 1.2rem 0.5rem;
+  border-bottom: 1px solid #6d6d6d;
   .container-fluid {
     display: flex;
     align-items: center;
@@ -41,7 +42,7 @@
         width: 30px;
         height: 30px;
         text-align: center;
-        background-color: #fff;
+        color: $SecondColor;
         line-height: 20px;
         font-size: 20px;
         margin: 0 5px;
@@ -54,14 +55,14 @@
         z-index: 1;
         .icon {
           position: relative;
-          color: #fff;
+          color: $SecondColor;
           transition: 0.5s;
           z-index: 3;
           font-size: 18px;
         }
         &:hover {
           .icon {
-            color: #fff;
+            color: $SecondColor;
             transform: rotateY(360deg);
           }
           &:before {
@@ -81,46 +82,6 @@
           z-index: 2;
         }
       }
-      &:nth-child(1) {
-        a {
-          svg {
-            color: #3b5999;
-          }
-          &:before {
-            background: #3b5999;
-          }
-        }
-      }
-      &:nth-child(2) {
-        a {
-          svg {
-            color: #55acee;
-          }
-          &:before {
-            background: #55acee;
-          }
-        }
-      }
-      &:nth-child(3) {
-        a {
-          svg {
-            color: #0077b5;
-          }
-          &:before {
-            background: #0077b5;
-          }
-        }
-      }
-      &:nth-child(4) {
-        a {
-          svg {
-            color: #dd4b39;
-          }
-          &:before {
-            background: #dd4b39;
-          }
-        }
-      }
     }
   }
 }
@@ -131,7 +92,7 @@
   z-index: 9999;
   right: 0;
   left: 0;
-  padding: 0 1.2rem 1.2rem;
+  padding: 0.5rem 1.2rem 1.2rem;
   // .navbar-toggler {
   //   border: 1px solid #fff;
   //   .navbar-toggler-icon {
