@@ -195,8 +195,45 @@
 
     <!-- Start header section -->
     <section class="header">
-      <img src="./media/image/header.jpg" alt="header" />
-      <h1 class="text_header">خدمات قانونية موثوقة و فعالة</h1>
+      <!-- Swiper -->
+      <div class="swiper HeaderSwiper">
+        <div class="swiper-wrapper">
+          <!-- For loop slide -->
+          <div class="swiper-slide">
+            <img src="./media/image/header.jpg" alt="header" />
+            <h1 class="text_header">خدمات قانونية موثوقة و فعالة</h1>
+          </div>
+          <!-- For loop slide -->
+
+          <!-- For loop slide -->
+          <div class="swiper-slide">
+            <img src="./media/image/header.jpg" alt="header" />
+            <h1 class="text_header">خدمات قانونية موثوقة و فعالة</h1>
+          </div>
+          <!-- For loop slide -->
+
+          <!-- For loop slide -->
+          <div class="swiper-slide">
+            <img src="./media/image/header.jpg" alt="header" />
+            <h1 class="text_header">خدمات قانونية موثوقة و فعالة</h1>
+          </div>
+          <!-- For loop slide -->
+        </div>
+      </div>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".HeaderSwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          loop: true,
+        });
+      </script>
     </section>
     <!-- End header section -->
 
